@@ -1,0 +1,45 @@
+.container{
+    background: #E4E8E5;
+    overflow: auto;
+}
+mat-form-field {
+width: 100%;
+}
+.h1{
+    position: relative;
+}
+.half-left{
+    width: 75%;
+    margin-left: 10%;
+    display: inline-block;
+}
+.half-right{
+    width: 15%;
+    float: right;
+    background: #E4E8E5;
+    display: flex;
+    justify-content: center;
+    margin:auto;
+    margin: 0 auto;
+    align-items: center;
+}
+.example-button-row{
+    background: #E4E8E5;
+    display:inline-block;
+}
+.example-button-row button{
+    display: block;
+    margin-bottom: 10px !important;
+    color: rgb(255, 255, 255);
+    width: 40%;
+    background: #609966;
+    padding: 10px 5px;
+    font-size: 15px;
+}
+.unset::-webkit-scrollbar{
+    width: 0 !important;
+   display: none; 
+}
+.mdc-dialog__content {
+    padding: 0px 20px;
+}

@@ -1,0 +1,90 @@
+<app-header></app-header>
+<mat-toolbar color="primary">
+
+    <div class="search-btn">
+      <input matInput (keyup)="applyFilter($event)" placeholder="Search by ?" #input>
+    </div>
+<span class="example-spacer"></span>
+<div class="example-button-row">
+<button mat-raised-button (click)="openDialog()">Add</button>
+</div>
+</mat-toolbar>
+
+<div class="contain-table">
+    <div style="margin-top: 10px;">
+      <div class="mat-elevation-z8">
+        <table mat-table [dataSource] = "dataSource" matSort>
+          <!-- Name Column -->
+          <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef> id </th>
+            <td mat-cell *matCellDef="let row"> {{row.id}} </td>
+          </ng-container>
+          <!-- Name Column -->
+          <ng-container matColumnDef="productName">
+            <th mat-header-cell *matHeaderCellDef> productName </th>
+            <td mat-cell *matCellDef="let row"> {{row.productName}} </td>
+          </ng-container>
+
+          <!-- Price Column -->
+          <ng-container matColumnDef="price">
+            <th mat-header-cell *matHeaderCellDef> Price </th>
+            <td mat-cell *matCellDef="let row"> {{row.price}} đ</td>
+          </ng-container>
+      
+          <!-- color Column -->
+          <ng-container matColumnDef="color">
+            <th mat-header-cell *matHeaderCellDef> Color </th>
+            <td mat-cell *matCellDef="let row"> {{row.color}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="size">
+            <th mat-header-cell *matHeaderCellDef> Size </th>
+            <td mat-cell *matCellDef="let row"> {{row.size}} </td>
+          </ng-container>
+          <ng-container matColumnDef="type">
+            <th mat-header-cell *matHeaderCellDef> Type </th>
+            <td mat-cell *matCellDef="let row"> {{row.type}} </td>
+          </ng-container>
+          <ng-container matColumnDef="style">
+            <th mat-header-cell *matHeaderCellDef> Style </th>
+            <td mat-cell *matCellDef="let row"> {{row.style}} </td>
+          </ng-container>
+          <ng-container matColumnDef="brand">
+            <th mat-header-cell *matHeaderCellDef> Brand </th>
+            <td mat-cell *matCellDef="let row"> {{row.brand}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="supplier">
+            <th mat-header-cell *matHeaderCellDef> Supplier </th>
+            <td mat-cell *matCellDef="let row"> {{row.supplier}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="description">
+            <th mat-header-cell *matHeaderCellDef> Description </th>
+            <td mat-cell *matCellDef="let row"> {{row.description}} </td>
+          </ng-container>
+          <!-- Action delete or update -->
+          <ng-container matColumnDef="action">
+            <th mat-header-cell *matHeaderCellDef> Action </th>
+            <td mat-cell *matCellDef="let row"> 
+              <button mat-icon-button style="color : #609966" (click)="editProduct(row)">
+                <mat-icon>edit</mat-icon>
+              </button>
+              <button mat-icon-button style="color : rgb(0, 0, 0)" (click)="deleteProduct(row.id)">
+                <mat-icon>delete</mat-icon>
+              </button>
+            </td>
+          </ng-container>
+
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      
+        <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+                       showFirstLastButtons
+                       aria-label="Select page of periodic rows">
+        </mat-paginator>
+      </div>      
+    </div>
+</div>

@@ -1,0 +1,122 @@
+{
+  "productList": [
+    {
+      "productName": "Trai chuoi 1",
+      "price": "17",
+      "color": "Yellow",
+      "size": "37",
+      "type": "Athelic",
+      "style": "Flat",
+      "brand": "VV",
+      "description": "ss",
+      "supplier": "S001",
+      "id": 2
+    },
+    {
+      "productName": "Trai chuoi 1",
+      "price": "17",
+      "color": "Yellow",
+      "size": "37",
+      "type": "Athelic",
+      "style": "Flat",
+      "brand": "VV",
+      "description": "ss",
+      "supplier": "S001",
+      "id": 3
+    },
+    {
+      "productName": "Trai chuoi 1",
+      "price": "17",
+      "color": "Yellow",
+      "size": "37",
+      "type": "Athelic",
+      "style": "Flat",
+      "brand": "VV",
+      "description": "ss",
+      "supplier": "S001",
+      "id": 4
+    },
+    {
+      "productName": "Trai chuoi 1",
+      "price": "17",
+      "color": "Yellow",
+      "size": "37",
+      "type": "Athelic",
+      "style": "Flat",
+      "brand": "VV",
+      "description": "ss",
+      "supplier": "S001",
+      "id": 5
+    },
+    {
+      "productName": "Trai chuoi 1",
+      "price": "17",
+      "color": "Yellow",
+      "size": "37",
+      "type": "Athelic",
+      "style": "Flat",
+      "brand": "VV",
+      "description": "ss",
+      "supplier": "S001",
+      "id": 6
+    },
+    {
+      "productName": "Trai chuoi 1",
+      "price": "17",
+      "color": "Yellow",
+      "size": "37",
+      "type": "Athelic",
+      "style": "Flat",
+      "brand": "VV",
+      "description": "ss",
+      "supplier": "S001",
+      "id": 7
+    },
+    {
+      "productName": "Trai chuoi 1",
+      "price": "17",
+      "color": "Yellow",
+      "size": "37",
+      "type": "Athelic",
+      "style": "Flat",
+      "brand": "VV",
+      "description": "ss",
+      "supplier": "S001",
+      "id": 8
+    },
+    {
+      "productName": "socola",
+      "price": "100",
+      "color": "Purple",
+      "size": "36",
+      "type": "Dress",
+      "style": "Athelic",
+      "brand": "VN",
+      "description": "ấds",
+      "supplier": "S002",
+      "id": 9
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "userList": [
+    {
+      "userName": "thietcac",
+      "passWord": "123",
+      "Gender": "Female",
+      "email": "213123@gmail.com",
+      "name": "sadasda",
+      "description": "ádasd",
+      "role": "manager",
+      "id": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

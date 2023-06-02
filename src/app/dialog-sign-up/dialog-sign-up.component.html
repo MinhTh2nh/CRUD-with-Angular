@@ -1,0 +1,53 @@
+<div class="container">
+    <h1 id="h1_title" mat-dialog-title style="text-align: center;">{{h1_title}}</h1>
+    <div class="half-left">
+        <form [formGroup] = "userForm" >
+            <div mat-dialog-content class="unset">
+                <mat-form-field appearance="outline">
+                    <mat-label>User Name</mat-label>
+                    <input formControlName = "userName" matInput placeholder="Username" pattern="[a-z]{1,15}" id="username">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input style="border: none !important;background-color: rgba(0,0,0,0);" matInput formControlName = "passWord"  type="password">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Confirm Password</mat-label>
+                    <input style="border: none !important;background-color: rgba(0,0,0,0);" matInput formControlName = "passWord" placeholder="Placeholder" type="password" id ="confirmPassword">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Gender</mat-label>
+                    <select formControlName = "Gender" matNativeControl required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>email</mat-label>
+                    <input formControlName = "email" matInput placeholder="Placeholder" type="email" required>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Name</mat-label>
+                    <input formControlName = "name" matInput placeholder="Placeholder">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Role</mat-label>
+                    <select formControlName = "role" matNativeControl required>
+                        <option value="staff">staff</option>
+                        <option value="manager">manager</option>
+                    </select>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Description</mat-label>
+                    <textarea formControlName = "description" name="" id="" cols="20" rows="10" matInput></textarea>
+                </mat-form-field>
+            </div>
+        </form>
+    </div>
+    <div class="half-right">
+        <div class="example-button-row">
+            <button mat-raised-button (click)="addUser()">{{actionBtn}}</button>
+            <button mat-raised-button mat-dialog-close>CLOSE</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,95 @@
+<div class="container">
+    <h1 id="h1_title" mat-dialog-title style="text-align: center;">{{h1_title}}</h1>
+    <div class="half-left">
+        <form [formGroup] = "productForm" >
+            <div mat-dialog-content class="unset">
+                <mat-form-field appearance="outline">
+                    <mat-label>Product Name</mat-label>
+                    <input formControlName = "productName" matInput placeholder="Placeholder">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Price</mat-label>
+                    <input matInput formControlName = "price" placeholder="Placeholder">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Product Color</mat-label>
+                    <select formControlName = "color" matNativeControl required>
+                        <option value="Red">Red</option>
+                        <option value="Yellow">Yellow</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Black">Black</option>
+                        <option value="Purple">Purple</option>
+                        <option value="Orange">Orange</option>
+                    </select>
+                </mat-form-field>
+    
+                <mat-form-field appearance="outline">
+                    <mat-label>Product Size</mat-label>
+                    <select formControlName = "size" matNativeControl required>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                      </select>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Product Type</mat-label>
+                    <select formControlName = "type" matNativeControl required>
+                        <option value="Dress">Dress</option>
+                        <option value="Casual">Casual</option>
+                        <option value="Athelic">Athelic</option>
+                        <option value="Flat">Flat</option>
+                        <option value="Heeled">Heeled</option>
+                      </select>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Style</mat-label>
+                    <select formControlName = "style" matNativeControl required>
+                        <option value="Formal">Formal</option>
+                        <option value="Casual">Casual</option>
+                        <option value="Athelic">Athelic</option>
+                        <option value="Flat">Flat</option>
+                        <option value="Heeled">Heeled</option>
+                      </select>
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Brand</mat-label>
+                    <input formControlName = "brand" matInput placeholder="Placeholder">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Description</mat-label>
+                    <textarea formControlName = "description" name="" id="" cols="20" rows="10" matInput></textarea>
+                </mat-form-field>
+                    
+                <mat-form-field appearance="outline">
+                    <mat-label>Date of Release</mat-label>
+                    <input matInput [matDatepicker]="picker">
+                    <mat-hint>MM/DD/YYYY</mat-hint>
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker ></mat-datepicker>
+                    
+                </mat-form-field>
+    
+                <mat-form-field appearance="outline">
+                    <mat-label>Supplier</mat-label>
+                    <select formControlName = "supplier" matNativeControl required>
+                        <option value="S001">S001</option>
+                        <option value="S002">S002</option>
+                        <option value="S003">S003</option>
+                        <option value="S004">S004</option>
+                        <option value="S005">S005</option>
+                        <option value="S006">S006</option>
+                      </select>
+                </mat-form-field>
+            </div>
+        </form>
+    </div>
+    <div class="half-right">
+        <div class="example-button-row">
+            <button mat-raised-button (click)="addProduct()">{{actionBtn}}</button>
+            <button mat-raised-button mat-dialog-close>CLOSE</button>
+        </div>
+    </div>
+</div>

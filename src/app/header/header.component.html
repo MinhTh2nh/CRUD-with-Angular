@@ -1,0 +1,50 @@
+<p style="border-bottom: 1px solid; margin-bottom: 0;">
+    <mat-toolbar color="primary">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="#">
+                <img src="../assets/logo.png" width="224" height="72">
+              </a>
+              
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+        </nav>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end">
+            <div class="navbar-item">
+            <div class="buttons">
+                <a class="button" style=" background: #609966;" (click)="openDialogSignUp()">
+                <strong>Sign up</strong>
+                </a>
+                <a class="button admin-holder" style=" background: #609966;">
+                <div class="admin-information">
+                  <div class="welcome" style="width: 33%;">
+                    <span>Welcome</span>
+                  </div>
+                  <div class="avatar" style="width: 23%;">
+                    <img src="../assets/AVATADISCORD.jpg" alt="">
+                  </div>
+                  <div class="admin-name" style="width: 33%;margin-right: 7%;">
+                    <h4 style="margin: 0;">MinhThanh</h4>
+                  </div>
+                </div>
+                </a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </mat-toolbar>
+</p>
+
+<div class="side-bar">
+    <ul>
+        <li><a   routerLink="/user" >User Management</a></li>
+        <li><a   routerLink="/product" > Product Management</a></li>
+        <li><a   href="#"> Logout</a></li>
+    </ul>
+</div>
+
